@@ -1,0 +1,179 @@
+1) What is OOPS?
+
+OOPS is abbreviated as Object Oriented Programming system in which programs are considered as a collection of objects. Each object is nothing but an instance of a class.
+
+2) What is a class?
+
+A class is simply a representation of a type of object. It is the blueprint/plan/template that describes the details of an object.
+
+3) What is an Object?
+
+An object is an instance of a class. It has its own state, behavior, and identity.
+
+4) What is Encapsulation?
+
+Encapsulation is an attribute of an object, and it contains all data which is hidden. That hidden data can be restricted to the members of that class.
+
+Levels are Public, Protected, Private.
+
+5) What is Polymorphism?
+
+Polymorphism is nothing but assigning behavior or value in a subclass to something that was already declared in the main class. Simply, polymorphism takes more than one form.
+
+6) What is Inheritance?
+
+Inheritance is a concept where one class shares the structure and behavior defined in another class. If Inheritance applied to one class is called Single Inheritance, and if it depends on multiple classes, then it is called multiple Inheritance.
+
+7) Explain the term constructor
+
+A constructor is a method used to initialize the state of an object, and it gets invoked at the time of object creation. Rules for constructor are:
+
+Constructor Name should be the same as a class name.
+A constructor must have no return type.
+10) Define Destructor?
+
+A destructor is a method which is automatically called when the object is made of scope or destroyed. Destructor name is also same as class name but with the tilde symbol before the name.
+
+8) What is an Inline function?
+
+An inline function is a technique used by the compilers and instructs to insert complete body of the function wherever that function is used in the program source code.
+
+9) What is a virtual function?
+
+A virtual function is a member function of a class, and its functionality can be overridden in its derived class. This function can be implemented by using a keyword called virtual, and it can be given during function declaration.
+
+A virtual function can be declared using a token(virtual) in C++. It can be achieved in C/Python Language by using function pointers or pointers to function.
+
+10) What is a friend function?
+
+A friend function is a friend of a class that is allowed to access to Public, private, or protected data in that same class. If the function is defined outside the class cannot access such information.
+
+A friend can be declared anywhere in the class declaration, and it cannot be affected by access control keywords like private, public, or protected.
+
+11) What is function overloading?
+
+Function overloading is a regular function, but it can perform different tasks. It allows the creation of several methods with the same name which differ from each other by the type of input and output of the function.
+
+12) What is operator overloading?
+
+Operator overloading is a function where different operators are applied and depends on the arguments. Operator,-,* can be used to pass through the function, and it has its own precedence to execute
+
+13) What is an abstract class?
+
+An abstract class is a class which cannot be instantiated. Creation of an object is not possible with an abstract class, but it can be inherited. An abstract class can contain only an Abstract method. Java allows only abstract method in abstract class while other languages allow non-abstract method as well.
+
+14) What is the super keyword?
+
+The super keyword is used to invoke the overridden method, which overrides one of its superclass methods. This keyword allows to access overridden methods and also to access hidden members of the superclass.
+
+It also forwards a call from a constructor, to a constructor in the superclass.
+
+15) What is method overriding?
+
+Method overriding is a feature that allows a subclass to provide the implementation of a method that overrides in the main class. It will override the implementation in the superclass by providing the same method name, same parameter, and same return type.
+
+16) What is an interface?
+
+An interface is a collection of an abstract method. If the class implements an interface, it thereby inherits all the abstract methods of an interface.
+
+Java uses Interface to implement multiple inheritances.
+
+17) What is exception handling?
+
+An exception is an event that occurs during the execution of a program. Exceptions can be of any type – Runtime exception, Error exceptions. Those exceptions are adequately handled through exception handling mechanism like try, catch, and throw keywords.
+
+18) What is the main difference between overloading and overriding?
+
+Overloading is static Binding, whereas Overriding is dynamic Binding. Overloading is nothing but the same method with different arguments, and it may or may not return the equal value in the same class itself.
+
+Overriding is the same method names with the same arguments and return types associated with the class and its child class.
+
+19) What is the main difference between a class and an object?
+
+An object is an instance of a class. Objects hold multiple information, but classes don’t have any information. Definition of properties and functions can be done in class and can be used by the object.
+
+A class can have sub-classes, while an object doesn’t have sub-objects.
+
+20) What is an abstraction?
+
+Abstraction is a useful feature of OOPS, and it shows only the necessary details to the client of an object. Meaning, it shows only required details for an object, not the inner constructors, of an object. Example – When you want to switch on the television, it is not necessary to know the inner circuitry/mechanism needed to switch on the TV. Whatever is required to switch on TV will be shown by using an abstract class.
+
+21) What are the access modifiers?
+
+Access modifiers determine the scope of the method or variables that can be accessed from other various objects or classes. There are five types of access modifiers, and they are as follows:
+
+Private
+Protected
+Public
+
+22) What are the various types of constructors?
+
+There are three types of constructors:
+
+–  Default Constructor – With no parameters.
+
+–  Parametric Constructor – With Parameters. Create a new instance of a class and also passing arguments simultaneously.
+
+–  Copy Constructor – Which creates a new object as a copy of an existing object.
+
+23) What is early and late Binding?
+
+Early binding refers to the assignment of values to variables during design time, whereas late Binding refers to the assignment of values to variables during run time.
+
+24) What is ‘this’ pointer?
+
+THIS pointer refers to the current object of a class. THIS keyword is used as a pointer which differentiates between the current object with the global object. It refers to the current object.
+
+25) What is the default access modifier in a class?
+
+The default access modifier of a class is Internal and the default access modifier of a class member is Private.
+
+26) What is a pure virtual function?
+
+A pure virtual function is a function which can be overridden in the derived class but cannot be defined. A virtual function can be declared as Pure by using the operator =0.
+
+Example –
+
+Virtual void function1() // Virtual, Not pure
+
+Virtual void function2() = 0 //Pure virtual
+
+27) What are all the operators that cannot be overloaded?
+
+Following are the operators that cannot be overloaded -.
+
+Scope Resolution (::)
+Member Selection (.)
+Member selection through a pointer to function (.*)
+
+28) What is dynamic or run time polymorphism?
+
+Dynamic or Run time polymorphism is also known as method overriding in which call to an overridden function is resolved during run time, not at the compile time. It means having two or more methods with the same name, same signature but with different implementation.
+
+29) Do we require a parameter for constructors?
+
+No, we do not require a parameter for constructors.
+
+30) What is a copy constructor?
+
+This is a special constructor for creating a new object as a copy of an existing object. There will always be only one copy constructor that can be either defined by the user or the system.
+
+31) What does the keyword virtual represented in the method definition?
+
+It means we can override the method.
+
+32) What are a base class, subclass, and superclass?
+
+The base class is the most generalized class, and it is said to be a root class.
+
+A Subclass is a class that inherits from one or more base classes.
+
+The superclass is the parent class from which another class inherits.
+
+33) What is static and dynamic Binding?
+
+Binding is nothing but the association of a name with the class. Static Binding is a binding in which name can be associated with the class during compilation time, and it is also called as early Binding.
+
+Dynamic Binding is a binding in which name can be associated with the class during execution time, and it is also called as Late Binding.
+
+
